@@ -14,7 +14,8 @@ Reset_Handler
 	MOV R2,#01
 	BL FACT
 	STR R2,[R4]
-stop b stop
+STOP
+	B STOP
 FACT PUSH{R14}
 	 PUSH{R1}
 	 SUB R1,#1
@@ -25,6 +26,6 @@ DOWN POP {R1}
 	 POP {R14}
 	 MUL R2,R1
 	 BX LR
-	AREA dataseg,DATA,READWRITE
+	AREA DATASEG,DATA,READWRITE
 RES DCD 0X0
-	end
+	END
