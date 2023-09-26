@@ -15,8 +15,6 @@ unsigned int dummy_3=0x00;
 
 void delay(void);
 void display(void);
-void downcounter(void);
-void upcounter(void);
 
 int main(void)
 {
