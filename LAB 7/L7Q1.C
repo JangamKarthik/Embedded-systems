@@ -36,7 +36,9 @@ int main(){
 	LPC_GPIO2->FIODIR |= 0x00;
 	flag1=0;
 	for(i=0;i<9;i++)
-        {temp1 = command[i]; lcd_write();}
+        {temp1 = command[i];
+	 lcd_write();
+	}
 	flag1=1;
 	i=0;
 while(1)
